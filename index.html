@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald&family=Sansita+Swashed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+   <div class="container">
+       <h1 class="text-center" id="title">Survey Form</h1>
+       <p id="description" class="text-center">a form to make you understand better to us!</p>
+       <form id="survey-form">
+           <div class="form-group">
+               <label id="name-label" for="name">Name</label>
+               <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name" required> 
+           </div>
+           <div class="form-group">
+               <label id="email-label" for="email">Email</label>
+               <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required> 
+           </div>
+           <div class="form-group">
+               <label id="number-label" for="number">Age</label>
+               <input type="number" class="form-control" name="age" id="number" min="10" max="99" placeholder="Enter your Age"> 
+           </div>
+           <div class="form-group">
+            <p>Select the role which suits you</p>
+               <select id="dropdown">
+                   <option>Choose your current profession</option>
+                   <option value="1">College Student</option>
+                   <option value="2">Full-time developer</option>
+                   <option value="3">High-schooler</option>
+                   <option value="4">Master Student</option>
+                   <option value="5">Other</option>
+               </select>
+           </div>
+           <div class="form-group">
+               <p>Would you recommend us to your friend?</p>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="radio1" name="recommend" class="custom-control-input" checked>
+                    <label class="custom-control-label" for="radio1">Yes</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="radio2" name="recommend" class="custom-control-input">
+                    <label class="custom-control-label" for="radio2">Maybe</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="radio3" name="recommend" class="custom-control-input">
+                    <label class="custom-control-label" for="radio3">No</label>
+                </div>
+           </div>
+           <div class="form-group">
+               <p>How many courses have you completed with us?</p>
+               <div class="custom-control custom-checkbox">
+                   <label>
+                       <input type="checkbox" name="courses" value="one" class="input-checkboxes"> One
+                   </label>
+               </div>
+               <div class="custom-control custom-checkbox">
+                   <label>
+                       <input type="checkbox" name="courses" value="two" class="input-checkboxes"> More than 2
+                   </label>
+               </div>
+               <div class="custom-control custom-checkbox">
+                   <label>
+                       <input type="checkbox" name="courses" value="three" class="input-checkboxes"> Less than 5
+                   </label>
+               </div>               
+               <div class="custom-control custom-checkbox">
+                   <label>
+                       <input type="checkbox" name="courses" value="four" class="input-checkboxes"> All of them
+                   </label>
+               </div>               
+             </div>
+             <div class="form-group">
+                 <p>Any comments or suggestions?</p>
+                 <textarea class="input-textarea" id="comments" placeholder="Enter your comment here"></textarea>
+             </div>
+             <div class="form-group">
+                 <button type="submit" id="submit-button" class="btn btn-block">Submit</button>
+             </div>
+       </form>
+   </div> 
+</body>
+</html>

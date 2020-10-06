@@ -1,0 +1,41 @@
+.container
+{
+    background-color:lightblue;
+}
+#title
+{
+    font-size: 2.5rem;
+    font-family: 'Anton', sans-serif;
+}
+#description
+{
+    font-family:'Sansita Swashed', cursive;
+}
+#name-label,#email-label,#number-label
+{
+    font-size:1.25rem;
+    font-family: 'Oswald', sans-serif;
+}
+p
+{
+    font-size: 1.25rem;
+    font-family: 'Oswald', sans-serif;
+}
+.custom-control-label
+{
+    font-size:1.0rem;
+}
+.input-textarea
+{
+    padding: 0.625rem;
+    width:100%;
+    min-height:120px;
+    resize: vertical;
+}
+#submit-button
+{
+    width:100%;
+    background-color: green;
+    font-size: 1.0rem;
+    font-weight: bold;
+}
